@@ -1,10 +1,20 @@
-.top {
-  background-color:  rgba(8, 70, 44, 0.274);
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.h1{
+.header{
   font-family:'Roboto';
   color: #4ABF2A;
+}
+
+.form {
+align-content: center;
+width: 900px;
+padding: 30px;
+border:3px solid #b7b7b7;
+background-color: f7f7f7#;
+border-radius: 30px;
+}
+
+.footer {
+  font-family:'Roboto';
+  background-color:  rgba(8, 70, 44, 0.274);
+  margin-left: 0px;
+  margin-top: 10px;
 }
