@@ -1,37 +1,31 @@
 h1{
-  font-size: 36px;
   font-family:'Roboto';
+  font-size: 36px;
   color: #392abf;
   text-align: center;
   }
 
 h3{
-  width: 600px;
-  margin-top:0px;
   font-family:'Roboto';
-  color: #4ABF2A;
+  font-size: 18px;
+  color: #4e6648;
+  text-align: center;
 }
 
 .content{
   font-family:'Roboto';
-  font-size: 12px;
+  font-size: 18px;
 }
 
+/* CSS da Caixa do Formulário */
 .form{
-align-content: center;
 width: 600px;
 padding: 30px;
 border:3px solid #b7b7b7;
 }
 
+/* CSS dos Campos do Formulário */
 .field{
   font-family:'Roboto';
-  font-size: 12px;
-}
-
-.footer{
-  font-family:'Roboto';
-  background-color:  rgba(8, 70, 44, 0.274);
-  margin-left: 0px;
-  margin-top: 10px;
+  font-size: 14px;
 }
