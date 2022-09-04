@@ -1,12 +1,13 @@
 <div align="center" class="header">
-  <h1 style="color: #392abf">Integrated People Management</h1>
+  <h1>Integrated People Management</h1>
   <h3>People to People</h3>
 </div>
 <body>
+<div align="center" class="content">
   <form class="form" align="left" method="post">
-    <p>Cadastre-se e Receba Novidades!</p>
     <div>
       <div class="field">
+        <p>
         <label for="nome"> Seu Nome: </label>
         <input
           type="text"
@@ -14,8 +15,10 @@
           name="nome"
           placeholder="Digite seu nome"
         />
+      </p>
       </div>
       <div class="field">
+        <p>
         <label for="telefone">Seu whatsapp:</label>
         <input
           type="text"
@@ -23,8 +26,10 @@
           name="telefone"
           placeholder="Digite seu whatsapp"
         />
+      </p>
       </div>
       <div class="field">
+        <p>
         <label for="email">Seu E-Mail:</label>
         <input
           type="email"
@@ -33,33 +38,38 @@
           placeholder="Digite seu E-Mail*"
           required
         />
+      </p>
       </div>
       <div class="field radiobox">
         <span>Quer se manter atualizado sobre Tecnologias DEV?</span>
+        <p>
         <input
           type="radio"
           name="novidades"
           id="sim"
           value="sim"
           checked
-        /><label for="sim">Sim</label>
-        <input type="radio" name="novidades" id="nao" value="nao" /><label
-          for="nao"
-          >Não</label
+        />
+        <label for="sim">Sim</label>
+        <input type="radio" name="novidades" id="nao" value="nao" />
+        <label for="nao">Não</label
         >
       </div>
       <div class="field">
         <label for="mensagem">Sua mensagem:</label>
+        <p>
         <textarea
           name="mensagem"
           id="mensagem"
           placeholder="Mensagem*"
           required
         ></textarea>
+        </p>
       </div>
     </div>
     <input type="submit" name="acao" value="Enviar" />
   </form>
+</div>
   <div align="center" class="footer">
     <p>Cadastre-se e Receba Novidades!</p>
   </div>

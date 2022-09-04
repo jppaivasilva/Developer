@@ -1,5 +1,5 @@
 <div align="center" class="header">
-  <h1 style="color: #392abf">Cadastro de Pessoas</h1>
+  <h1 style="color: #392abf">Login</h1>
 </div>
 <body>
   <form class="form" align="left" method="post">
@@ -7,8 +7,8 @@
       <div class="field">
         <label for="Login">Digite seu E-mail:</label>
         <input
-          type="text"
           id="Login"
+          type="email"
           name="Login"
           placeholder="Digite seu nome E-Mail*"
           required
@@ -17,8 +17,8 @@
       <div class="field">
         <label for="Senha">Digite a Senha:</label>
         <input
-          type="password"
           id="Senha"
+          type="password"
           name="Senha"
           placeholder="Digite a senha"
           required
@@ -28,6 +28,9 @@
     <input type="submit" name="acao" value="Logar" />
   </form>
   <div align="center" class="footer">
-    <p>Cadastre-se e Receba Novidades!</p>
+    <p class="link">
+      Ainda não tem Cadastro?
+      <a href="#paracadastro">Cadastra-se</a>
+    </p>
   </div>
 </body>

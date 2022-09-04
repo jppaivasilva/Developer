@@ -1,18 +1,35 @@
-.header{
+h1{
+  font-size: 36px;
+  font-family:'Roboto';
+  color: #392abf;
+  text-align: center;
+  }
+
+h3{
   width: 600px;
   margin-top:0px;
   font-family:'Roboto';
   color: #4ABF2A;
 }
 
-.form {
+.content{
+  font-family:'Roboto';
+  font-size: 12px;
+}
+
+.form{
 align-content: center;
 width: 600px;
 padding: 30px;
 border:3px solid #b7b7b7;
 }
 
-.footer {
+.field{
+  font-family:'Roboto';
+  font-size: 12px;
+}
+
+.footer{
   font-family:'Roboto';
   background-color:  rgba(8, 70, 44, 0.274);
   margin-left: 0px;
