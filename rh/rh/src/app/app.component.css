@@ -29,3 +29,17 @@ border:3px solid #b7b7b7;
   font-family:'Roboto';
   font-size: 14px;
 }
+
+/* Estilo do Placeholder */
+::-webkit-input-placeholder{
+  color:rgb(30, 75, 75);
+  font-style:  italic;
+  font-size: 14px;
+  }
+
+input:-moz-placeholder,textarea:-moz-placeholder{
+  color: #4e6648;
+  font-style: italic;
+  
+}
+
