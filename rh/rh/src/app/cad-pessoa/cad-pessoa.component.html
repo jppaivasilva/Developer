@@ -1,1 +1,98 @@
-<p>cad-pessoa works!</p>
+<div align="center" class="header">
+  <h1>Pessoas</h1>
+  <h3>IPM</h3>
+</div>
+<body>
+<div align="center" class="content">
+  <form class="form" align="left" method="post">
+    <div>
+      <div class="field">
+        <p>
+        <label for="nome"> Seu Nome: </label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+        />
+      </p>
+      </div>
+      <div class="field">
+        <p>
+        <label for="telefone">Seu whatsapp:</label>
+        <input
+          type="text"
+          id="telefone"
+          name="telefone"
+          placeholder="Digite seu whatsapp"
+        />
+      </p>
+      </div>
+      <div class="field">
+        <p>
+        <label for="email">Seu E-Mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu E-Mail*"
+          required
+        />
+      </p>
+      </div>
+      <div class="field">
+        <p>
+        <label for="endereco">Endereço:</label>
+        <input
+          type="text"
+          id="endereco"
+          name="endereco"
+          placeholder="Informe o Endereço*"
+          required
+        />
+      </p>
+      <div class="field">
+        <p>
+        <label for="CPFCNPJ">CPF/CNPJ</label>
+        <input
+          type="number"
+          id="CPFCNPJ"
+          name="CPFCNPJ"
+          placeholder="Informe o seu CNPJ"
+          required
+        />
+      </p>
+      </div>
+      <div class="field">
+        <p>
+        <label for="dt_cad">Data do Cadastro</label>
+        <input
+          type="date"
+          id="dt_cad"
+          name="dt_cad"
+          placeholder="Informe a data do cadastro"
+          required
+        />
+      </p>
+      </div>
+      </div>
+      <div class="field radiobox">
+        <span>Sexo</span>
+        <p>
+        <input
+          type="radio"
+          name="sexo"
+          id="sexo"
+          value="sexo"
+          checked
+        />
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="sexo" id="sexo" value="Masculino" />
+        <label for="Feminino">Feminino</label
+        >
+      </div>
+    </div>
+    <input type="submit" name="acao" value="Enviar" />
+  </form>
+</div>
+</body>
