@@ -79,17 +79,14 @@
       <div class="field radiobox">
         <span>Sexo</span>
         <p>
-        <input
-          type="radio"
-          name="sexo"
-          id="sexo"
-          value="sexo"
-          checked
-        />
-        <label for="Masculino">Masculino</label>
-        <input type="radio" name="sexo" id="sexo" value="Masculino" />
-        <label for="Feminino">Feminino</label
-        >
+          <div>
+            <input type="radio" name="sexo" id="masculino" value="masculino" required />
+            <label for="Masculino">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" name="sexo" id="feminino" value="feminino" required />
+            <label for="Feminino">Feminino</label>
+          </div>
       </div>
     </div>
     <input type="submit" name="acao" value="Enviar" />
