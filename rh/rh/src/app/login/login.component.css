@@ -138,3 +138,28 @@ button[type="submit"]:hover{
   padding: 0;
   margin: 15px 0 0 0;
 }
+
+.created{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.created p{
+  font-size: 13px;
+  font-weight:  bold;
+  color: #008552;
+}
+
+.created a{
+  color: #666;
+  font-weight: normal;
+  text-decoration: none;
+  margin-top: 0;
+
+}
+
+.checkbox label{
+  display:inline;
+  maring: 0;
+}
+
