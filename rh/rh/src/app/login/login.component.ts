@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, Injectable, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
+  template:'',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+@Injectable()
+export abstract class LoginComponent implements OnInit {
 
   constructor() { }
 

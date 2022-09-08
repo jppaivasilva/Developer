@@ -1,29 +1,36 @@
-<div id="login-page">
-  <div class="login">
-    <h2> class='<login-title>Login</login-title></h2>
-    <p class="notice">Por favor logue para acessar o Sistema</p>
-    <form class="form-login">
-      <label for="email">E-mail</label>
-        <div class="input-email">
-          <i class="fas fa-envelope icon"></i>
-        <input type="email" name="email" placeholder="Digite seu e-mail" required>
-        </div>
-      <label for="password">Senha</label>
-        <div class="input-password">
-          <input type="password" name="password" placeholder="Digite sua senha" required>
-        </div>
-      <div class="checkbok">
-        <label for="remember">
-        <input type="checkbox" name="remember">
-        Recuperar a Senha
-        </label>
-      </div>
-      <button type="submit">
-      <i class="fas fa-door-open"></i>
-      Entrar
-      </button>
-    </form>
-    <a href="#">Perdeu a senha?</a>
-    <div class="created">
-  </div>
+<div align="center" class="header">
+  <h1 style="color: #392abf">Login</h1>
 </div>
+<body>
+  <form class="form" align="left" method="post">
+    <div>
+      <div class="field">
+        <label for="Login">Digite seu E-mail:</label>
+        <input
+          id="Login"
+          type="email"
+          name="Login"
+          placeholder="Digite seu nome E-Mail*"
+          required
+        />
+      </div>
+      <div class="field">
+        <label for="Senha">Digite a Senha:</label>
+        <input
+          id="Senha"
+          type="password"
+          name="Senha"
+          placeholder="Digite a senha"
+          required
+        />
+      </div>
+    </div>
+    <input type="submit" name="acao" value="Logar" />
+  </form>
+  <div align="center" class="footer">
+    <p class="link">
+      Ainda não tem Cadastro?
+      <a href="#paracadastro">Cadastra-se</a>
+    </p>
+  </div>
+</body>

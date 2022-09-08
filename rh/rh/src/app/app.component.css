@@ -1,45 +1,129 @@
-h1{
-  font-family:'Roboto';
-  font-size: 36px;
-  color: #392abf;
-  text-align: center;
-  }
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
-h3{
-  font-family:'Roboto';
-  font-size: 18px;
-  color: #4e6648;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.content{
-  font-family:'Roboto';
-  font-size: 18px;
+body {
+  margin: 0;
+  font-family: "Montserrat";
 }
-
-/* CSS da Caixa do Formulário */
-.form{
-width: 600px;
-padding: 30px;
-border:3px solid #b7b7b7;
-}
-
-/* CSS dos Campos do Formulário */
-.field{
-  font-family:'Roboto';
+a {
+  color: #666;
   font-size: 14px;
+  display: block;
 }
-
-/* Estilo do Placeholder */
-::-webkit-input-placeholder{
-  color:rgb(30, 75, 75);
-  font-style:  italic;
-  font-size: 14px;
-  }
-
-input:-moz-placeholder,textarea:-moz-placeholder{
-  color: #4e6648;
-  font-style: italic;
-  
+.login-title {
+  text-align: center;
+  font-family: "Montserrat";
 }
-
+#login-page {
+  display: flex;
+}
+.notice {
+  font-size: 13px;
+  text-align: center;
+  color: #666;
+}
+.login {
+  width: 30%;
+  height: 100vh;
+  background: #FFF;
+  padding: 70px;
+  font-family: "Montserrat";
+}
+.login a {
+  margin-top: 25px;
+  text-align: center;
+}
+.form-login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.form-login label {
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 20px;
+  display: block;
+  color: #666;
+  font-family: "Montserrat";
+}
+.input-email,
+.input-password {
+  width: 100%;
+  background: #ededed;
+  border-radius: 25px;
+  margin: 4px 0 10px 0;
+  padding: 10px;
+  display: flex;
+}
+.icon {
+  padding: 4px;
+  color: #666;
+  min-width: 30px;
+  text-align: center;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 4px 0;
+  outline: none;
+  font-family: "Montserrat";
+}
+button[type="submit"] {
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  padding: 14px;
+  background: #1866c8;
+  color: #FFF;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: ease all 0.1s;
+  font-family: "Montserrat";
+}
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+.background {
+  width: 70%;
+  padding: 50px;
+  height: 100vh;
+  background: linear-gradient(80deg, rgba(94, 236, 236, 0.5), rgba(0, 91, 133, 0.7)), url('https://cdn.dribbble.com/users/1355613/screenshots/15349243/media/71e74eb3be96c50e3769c5fc5c8ba995.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction:row;
+  font-family: "Montserrat";
+}
+.background h1 {
+  max-width: 1080px;
+  color: #FFF;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.background p {
+  max-width: 650px;
+  color: #1a1a1a;
+  font-size: 15px;
+  text-align: right;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+.checkbox label {
+  display: inline;
+  margin: 0;
+}
