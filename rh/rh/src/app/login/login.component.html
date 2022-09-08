@@ -1,36 +1,30 @@
-<div align="center" class="header">
-  <h1 style="color: #392abf">Login</h1>
-</div>
-<body>
-  <form class="form" align="left" method="post">
-    <div>
-      <div class="field">
-        <label for="Login">Digite seu E-mail:</label>
-        <input
-          id="Login"
-          type="email"
-          name="Login"
-          placeholder="Digite seu nome E-Mail*"
-          required
-        />
+<div id="login-page">
+  <div class="login">
+    <h2 class="login-title"><a href="#"><img src="https://i.imgur.com/uTEzMe9.png" width="60" height="60">
+    </a>Login G.I.P</h2>
+    <p class="notice">Faça Login para acessar o sistema</p>
+    <form class="form-login">
+      <label for="email">E-mail</label>
+      <div class="input-email">
+        <i class="fas fa-envelope icon"></i>
+        <input type="email" name="email" placeholder="Digite seu email" required>
       </div>
-      <div class="field">
-        <label for="Senha">Digite a Senha:</label>
-        <input
-          id="Senha"
-          type="password"
-          name="Senha"
-          placeholder="Digite a senha"
-          required
-        />
+      <label for="password">Senha</label>
+      <div class="input-password">
+        <i class="fas fa-lock icon"></i>
+        <input type="password" name="password" placeholder="Digite sua senha" required>
       </div>
-    </div>
-    <input type="submit" name="acao" value="Logar" />
-  </form>
-  <div align="center" class="footer">
-    <p class="link">
-      Ainda não tem Cadastro?
-      <a href="#paracadastro">Cadastra-se</a>
-    </p>
+      <div class="checkbox">
+        <label for="remember">
+          <input type="checkbox" name="remember">
+          Lembrar
+        </label>
+      </div>
+      <button type="submit"><i class="fas fa-door-open"></i>Logar</button>
+    </form>
+      <a href="#">Esqueceu a senha?</a>
   </div>
-</body>
+  <div class="background">
+    <h1>Um sistema criado por pessoas para pessoas</h1>
+  </div>
+</div>
