@@ -1,0 +1,18 @@
+.exemplo {
+  color: #FFF;
+  list-style-type: none;
+}
+
+.item {
+  width: 30%;
+  height: 150px;
+  margin-bottom: 5px;
+  display: inline;
+}
+
+
+.primeiro{
+  background-color: aquamarine;
+}
+
+
