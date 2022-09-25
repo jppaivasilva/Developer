@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ListapacienteComponent } from './listapaciente/listapaciente.component';
 import { CadpacienteComponent } from './cadpaciente/cadpaciente.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
