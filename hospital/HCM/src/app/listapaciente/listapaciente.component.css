@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+/* -- Estilo da Tabela*/
+
+
+h4{
+  margin: 25px 25px; /* Margem TOP e Margem Esqueda */
+}
+
+.tabela {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 25px 25px; /* Margem TOP e Margem Esqueda */
+    font-size: 14px;
+    font-family: Roboto;
+    min-width: 200px;
+    max-width: max-content;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* -- Estilo do cabeçalho da tabela  -- */
+
+.cabeçalho {
+  background-color: #c5c5c5;
+  color: #0f0f0f;
+  text-align: left;
+}
+
+/* -- Espaçamento entre as células da tabela -- */
+
+.tabela th,
+.tabela td {
+  padding: 12px 15px;
+}
+
+/* -- borda entre as linhas -- */
+.tabela tbody tr {
+  border-bottom: 2px solid #dddddd;
+}
+
+/* -- cor da linha  alternando -- */
+.tabela tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3f3;
+}
+
+.tabela tbody tr:last-of-type {
+  border-bottom: 2px solid #4740a8;
+}
+
+.tabela td.DataNascimento {
+  text-align: center;
+}
