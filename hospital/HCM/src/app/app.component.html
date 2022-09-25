@@ -2,11 +2,12 @@
 <!-- toolbar azul-->
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <a mat-button routerLink="/">Home</a>
-      <a mat-button routerLink="/cadastro">Registre-se</a>
-      <a mat-button routerLink="/login">Login</a>
-      <a mat-button routerLink="/listapaciente">Lista</a>
+      <a mat-button routerLink="/"><mat-icon>home</mat-icon> Home</a>
+      <a mat-button routerLink="/cadastro"><mat-icon>login</mat-icon> Registre-se</a>
+      <a mat-button routerLink="/login"><mat-icon>key</mat-icon> Login</a>
+      <a mat-button routerLink="/lista"><mat-icon>featured_play_list</mat-icon> Lista de Pacientes</a>
     </mat-toolbar-row>
   </mat-toolbar>
+
 
   <router-outlet></router-outlet>
