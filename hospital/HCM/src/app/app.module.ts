@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { ListapacienteComponent } from './listapaciente/listapaciente.component';
 import { CadpacienteComponent } from './cadpaciente/cadpaciente.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CadpacienteComponent } from './cadpaciente/cadpaciente.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
