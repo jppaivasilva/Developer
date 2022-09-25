@@ -1,1 +1,17 @@
 <router-outlet></router-outlet>
+<!--Renato: Este mat-toolbar vai exibir uma barra azul no topo da página.
+  podemos trocar a cor para primary, accent ou warn -->
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <!--  <span>HOME</span> -->
+      <span><a href="/">HOME<mat-icon>home</mat-icon></a></span>
+      <span class="spacer"></span>
+
+      <!--  as duas linhas abaixo são ROTAS para outros componentes deste projeto.
+      verifique sempre app-routing.module.ts   -->
+      <a mat-button routerLink="/cadastro">Cadastro<mat-icon>star</mat-icon> </a>
+      <a mat-button routerLink="/login"><mat-icon>token</mat-icon></a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
