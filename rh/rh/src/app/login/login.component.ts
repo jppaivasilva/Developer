@@ -6,7 +6,7 @@ import { Component, Inject, Injectable, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 @Injectable()
-export abstract class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   constructor() { }
 
