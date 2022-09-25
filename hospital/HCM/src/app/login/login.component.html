@@ -1,1 +1,25 @@
-<p>login works!</p>
+<mat-toolbar>
+  <span>Acesso ao Sistema</span>
+</mat-toolbar>
+<mat-card class="my-card">
+  <mat-card-content>
+      <form class="my-form">
+
+        <mat-form-field class="full-width">
+            <mat-label>E-mail</mat-label>
+            <input  matInput  placeholder="ex.: contato@email.com" name="email">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Senha</mat-label>
+            <input  matInput  placeholder="Angular#2022" name="password">
+        </mat-form-field>
+
+      </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+      <button mat-raised-button  color="primary">Login <mat-icon>done</mat-icon></button>
+  </mat-card-actions>
+
+</mat-card>

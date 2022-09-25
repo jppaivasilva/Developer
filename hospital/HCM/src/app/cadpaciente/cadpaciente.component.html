@@ -1,1 +1,48 @@
-<p>cadpaciente works!</p>
+<mat-card-content>
+  <form class="my-form">
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome" name="fname" required />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Sobrenome</mat-label>
+      <input matInput placeholder="sobrenome" name="lname" required />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Endereço</mat-label>
+      <input matInput placeholder="Endereço" name="address" required />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>E-mail</mat-label>
+      <input
+        matInput
+        type="email"
+        placeholder="seuemail@email.com"
+        name="email"
+      />
+    </mat-form-field>
+
+<br>
+
+<br>
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="******" name="senha" />
+    </mat-form-field>
+
+    <div class="p1">
+      <mat-radio-group>
+        <mat-radio-button class="example-margin" value="after"
+          >Masculinho</mat-radio-button
+        >
+        <mat-radio-button class="example-margin" value="before"
+          >Feminino</mat-radio-button
+        >
+      </mat-radio-group>
+    </div>
+  </form>
+</mat-card-content>
+<br />
+<mat-card-actions>
+  <button mat-raised-button color="primary">Gravar</button>
+</mat-card-actions>
