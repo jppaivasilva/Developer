@@ -24,11 +24,13 @@ h4{
 
 /* -- Estilo do cabeçalho da tabela  -- */
 
-.cabeçalho {
+.cabeçalho:first-of-type{
   background-color: #c5c5c5;
+  border-bottom: 2px solid #4740a8;
   color: #0f0f0f;
   text-align: left;
 }
+
 
 /* -- Espaçamento entre as células da tabela -- */
 

@@ -1,13 +1,14 @@
 <router-outlet></router-outlet>
 <!-- toolbar azul-->
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" class="borda_redonda">
     <mat-toolbar-row>
-      <a mat-button routerLink="/"><mat-icon>home</mat-icon> Home</a>
+      <a mat-button routerLink="/menu"><mat-icon>home</mat-icon> Home</a>
       <a mat-button routerLink="/cadastro"><mat-icon>login</mat-icon> Registre-se</a>
       <a mat-button routerLink="/login"><mat-icon>key</mat-icon> Login</a>
       <a mat-button routerLink="/lista"><mat-icon>featured_play_list</mat-icon> Lista de Pacientes</a>
+      <a mat-button><mat-icon>exit_to_app</mat-icon>Sair</a>
     </mat-toolbar-row>
   </mat-toolbar>
+<router-outlet></router-outlet>
 
 
-  <router-outlet></router-outlet>
