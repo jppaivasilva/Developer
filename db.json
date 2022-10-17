@@ -1,0 +1,16 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "Nome": "João Paulo",
+      "Email": "jppaivasilva@gmail.com"
+    }
+  ],
+  "cidade": [
+    {
+      "id": 1,
+      "cidade": "São Vicente",
+      "estado": "SP"
+    }
+  ]
+}
