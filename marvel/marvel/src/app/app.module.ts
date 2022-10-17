@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { PersonagensComponent } from './personagens/personagens.component';
 import { PersonagemComponent } from './personagens/personagem/personagem.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     PersonagensComponent,
     PersonagemComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

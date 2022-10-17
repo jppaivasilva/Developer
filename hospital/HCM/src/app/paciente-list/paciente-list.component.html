@@ -1,0 +1,41 @@
+<div class="container custom-container-2">
+  <!-- Mostra mensagem quando não há nenhum paciente cadastrado ainda -->
+  <div class="no-data text-center" *ngIf="Paciente.length == 0">
+    <p>Não há nenhum Paciente adicionado ainda!</p>
+    <button class="btn btn-outline-primary" routerLink="/create-employee">
+      Adicionar Paciente
+    </button>
+  </div>
+  <!-- Employees list table, it hides when there is no employee -->
+  <div *ngIf="Paciente.length !== 0">
+    <h3 class="mb-3 text-center">Lista de Pacientes</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">Nome do Paciente</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let paciente of Paciente">
+            <td>{{ paciente.id }}</td>
+            <td>{{ paciente.name }}</td>
+            <td>{{ paciente.email }}</td>
+            <td>{{ paciente.phone }}</td>
+            <td>
+              <span class="edit" routerLink="/paciente-edit/{{ paciente.id }}"
+                >Edit</span>
+              <span class="delete" (click)="deleteEmployee(paciente.id)"
+                >Delete</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
