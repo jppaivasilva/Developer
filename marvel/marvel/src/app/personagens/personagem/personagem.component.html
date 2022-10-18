@@ -1,0 +1,19 @@
+<mat-card>
+  <img mat-card-image src={{personagem.thumbnail.path}}.{{personagem.thumbnail.extension}} alt="{{personagem.name}}">
+
+  <!-- Nome de todos os herois-->
+  <mat-card-title>
+      {{personagem.name}}
+  </mat-card-title>
+
+  <!--Descrição dos herois-->
+ <mat-card-content>
+      {{personagem.description}}
+  </mat-card-content>
+
+  <!--Detalhes dos personagens-->
+  <mat-card-footer>
+      <a href="{{personagem.urls[0].url}}" target="_blank" fxFlex mat-flat-button color="primary">Detalhes </a>
+  </mat-card-footer>
+
+</mat-card>
