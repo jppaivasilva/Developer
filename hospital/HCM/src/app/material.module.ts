@@ -18,7 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -33,6 +33,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
+
+import { getPortuguesePaginatorIntl } from './listapaciente/port-paginator-intls';
+
 
 const materialModules = [
   CdkTreeModule,
@@ -66,8 +69,8 @@ const materialModules = [
   MatGridListModule,
   MatRadioModule,
   MatDatepickerModule,
-  MatTooltipModule,
-  ];
+  MatTooltipModule
+];
 
 @NgModule({
   imports: [
@@ -77,6 +80,11 @@ const materialModules = [
   exports: [
     ...materialModules
   ],
+  providers: [
+    { provide: MatPaginatorIntl, useValue: getPortuguesePaginatorIntl() }
+  ]
 })
 
-export class AngularMaterialModule { }
+export class AngularMaterialModule {
+
+}

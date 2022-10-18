@@ -1,23 +1,20 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { RestApiService } from '../shared/rest-api.service';
 
-import { PacienteCreateComponent } from './paciente-create.component';
+@Component({
+  selector: 'app-paciente-create',
+  templateUrl: './paciente-create.component.html',
+  styleUrls: ['./paciente-create.component.css']
+})
+export class PacienteCreateComponent implements OnInit {
 
-describe('PacienteCreateComponent', () => {
-  let component: PacienteCreateComponent;
-  let fixture: ComponentFixture<PacienteCreateComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ PacienteCreateComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(PacienteCreateComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  @Input() pacienteDetails = { name: '', email: '', phone: 0 };
+  constructor(public restApi: RestApiService, public router: Router) {}
+  ngOnInit() {}
+  addEmployee(dataEmployee: any) {
+    this.restApi.createEmployee(this.pacienteDetails).subscribe((data: {}) => {
+      this.router.navigate(['/paciente-list']);
+    });
+  }
+}

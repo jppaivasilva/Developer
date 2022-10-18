@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestApiService } from '../shared/rest-api.service';
 
 @Component({
   selector: 'app-paciente-list',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PacienteListComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  Paciente: any = [];
+  constructor(public restApi: RestApiService) {}
+  ngOnInit() {
+    this.loadEmployees();
   }
-
+  // Get employees list
+  loadEmployees() {
+    return this.restApi.getEmployees().subscribe((data: {}) => {
+      this.Paciente = data;
+    });
+  }
+  // Delete employee
+  deleteEmployee(id: any) {
+    if (window.confirm('Tem certeza que deseja Excluir este Paciente?')) {
+      this.restApi.deleteEmployee(id).subscribe((data) => {
+        this.loadEmployees();
+      });
+    }
+  }
 }
